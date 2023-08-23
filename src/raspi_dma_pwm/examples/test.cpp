@@ -4,6 +4,7 @@ using namepace std;
 
 int main(){
     int pi = pigpio_start("192.168.1.55", NULL);
+    // create motor on gpio pin 17
     PWM_obj motor1 = PWM_obj(pi, 17);
 
     while (true)
